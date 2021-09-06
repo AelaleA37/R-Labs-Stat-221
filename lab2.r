@@ -15,5 +15,9 @@ old <- gained_cleaned %>%
   filter(mature=="mature mom")
 var.test(young$gained,old$gained)
 
-#3
+#3/4
 t.test(young$gained, old$gained, var.equal = TRUE)
+
+#5
+summary(old$mage)
+summary(young$mage)
