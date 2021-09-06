@@ -14,3 +14,6 @@ young <- gained_cleaned %>%
 old <- gained_cleaned %>% 
   filter(mature=="mature mom")
 var.test(young$gained,old$gained)
+
+#3
+t.test(young$gained, old$gained, var.equal = TRUE)
